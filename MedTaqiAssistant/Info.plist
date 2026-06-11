@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>MedTaqi</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+
+	<!-- Supported orientations -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<!-- Status bar -->
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+
+	<!-- Camera permission -->
+	<key>NSCameraUsageDescription</key>
+	<string>MedTaqi needs camera access to scan and photograph medical reports and lab results.</string>
+
+	<!-- Photo Library -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>MedTaqi needs photo library access to upload medical images and reports.</string>
+
+	<!-- Microphone (for any audio features) -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>MedTaqi may use the microphone for voice input features.</string>
+
+	<!-- Local Network -->
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>MedTaqi uses local network for communication features.</string>
+
+	<!-- App Transport Security - allow HTTP for API calls -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+
+	<!-- Launch screen -->
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+
+	<!-- Scene manifest - disable for simple AppDelegate setup -->
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+
+	<!-- Requires full screen (no split view on iPad) -->
+	<key>UIRequiresFullScreen</key>
+	<true/>
+
+</dict>
+</plist>
